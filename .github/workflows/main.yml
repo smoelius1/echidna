@@ -9,7 +9,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Test Echidna action step
         id: echidna
-        uses: smoelius1/echidna
+        uses: smoelius1/echidna@v1
         with:
           directory: 'examples/basic'
           contract: 'TestAssert'
