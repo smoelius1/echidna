@@ -11,5 +11,5 @@ jobs:
         id: echidna
         uses: smoelius1/echidna@master
         with:
-          directory: 'examples/basic'
+          directory: 'examples/solidity/basic'
           contract: 'TestAssert'
