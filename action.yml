@@ -2,8 +2,8 @@
 name: 'Echidna'
 description: 'Run Echidna'
 inputs:
-  directory:
-    files: 'Files to analyze'
+  files:
+    description: 'Files to analyze'
     required: falso
     default: '.'
   contract:
