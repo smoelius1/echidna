@@ -1,2 +1,2 @@
 FROM trailofbits/echidna
-RUN pip3 install crytic-compile
+ENV PYTHONPATH=/root/,local/lib/python3.6/site-packages
