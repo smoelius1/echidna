@@ -1,0 +1,11 @@
+# action.yml
+name: 'Echidna'
+description: 'Run Echidna'
+inputs:
+  directory:
+    description: 'Who to greet'
+    required: false
+    default: '.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
