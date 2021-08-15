@@ -13,8 +13,8 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - crytic-compile
-    - --version
+    - pip3
+    - list
     #- echidna-test
     # - ${{ inputs.directory }}
     # - --contract
