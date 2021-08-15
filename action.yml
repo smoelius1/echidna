@@ -16,4 +16,4 @@ runs:
     - echidna-test
     - ${{ inputs.directory }}
     - --contract
-    - - ${{ inputs.contract }}
+    - ${{ inputs.contract }}
