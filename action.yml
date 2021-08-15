@@ -13,8 +13,8 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - pip3
-    - list
+    - ls
+    - /root/lib/python3.6/site-packages
     #- echidna-test
     # - ${{ inputs.directory }}
     # - --contract
