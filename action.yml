@@ -13,4 +13,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.directory }} --contract ${{ inputs.contract }}
+    - pwd # echidna-test ${{ inputs.directory }} --contract ${{ inputs.contract }}
