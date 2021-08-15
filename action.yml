@@ -3,9 +3,12 @@ name: 'Echidna'
 description: 'Run Echidna'
 inputs:
   directory:
-    description: 'Who to greet'
-    required: false
+    description: 'Where to run Echidna'
+    required: falso
     default: '.'
+  contract:
+    description: 'Smart contract to test'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
