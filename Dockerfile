@@ -1,2 +1,2 @@
 FROM trailofbits/echidna
-ENTRYPOINT echidna-test
+ENTRYPOINT ["/echidna-test"]
