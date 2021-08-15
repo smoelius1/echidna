@@ -14,7 +14,7 @@ runs:
   image: 'Dockerfile'
   args:
     - ls
-    - /root/lib/python3.6/site-packages
+    - /root/.local/lib/python3.6/site-packages
     #- echidna-test
     # - ${{ inputs.directory }}
     # - --contract
