@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Test Echidna action
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Test Echidna action step
+        id: echidna
+        uses: smoelius1/echidna
+        with:
+          directory: 'examples/basic'
+          contract: 'TestAssert'
