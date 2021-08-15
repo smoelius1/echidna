@@ -17,3 +17,5 @@ runs:
     - ${{ inputs.directory }}
     - --contract
     - ${{ inputs.contract }}
+  env:
+    - PYTHONPATH: /root/,local/lib/python3.6/site-packages
