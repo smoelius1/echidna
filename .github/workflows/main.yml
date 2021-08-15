@@ -11,5 +11,6 @@ jobs:
         id: echidna
         uses: smoelius1/echidna@master
         with:
-          directory: 'examples/solidity/basic/assert.sol'
+          files: 'examples/solidity/basic/assert.sol'
           contract: 'TestAssert'
+          config: 'examples/solidity/basic/assert.yaml'
