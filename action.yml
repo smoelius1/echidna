@@ -13,7 +13,9 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - echidna-test
-    - ${{ inputs.directory }}
-    - --contract
-    - ${{ inputs.contract }}
+    - crytic-compile
+    - --version
+    #- echidna-test
+    # - ${{ inputs.directory }}
+    # - --contract
+    # - ${{ inputs.contract }}
