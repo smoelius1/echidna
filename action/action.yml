@@ -1,11 +1,10 @@
 # action.yml
 name: 'Echidna'
-description: 'Run Echidna'
+description: 'Run echidna-test'
 inputs:
   files:
     description: 'Files to analyze'
-    required: falso
-    default: '.'
+    required: true
   contract:
     description: 'Solidity contract to test'
     required: false
@@ -15,12 +14,3 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - echidna-test
-    - ${{ inputs.files }}
-    - --contract
-    - ${{ inputs.contract }}
-    - --config
-    - ${{ inputs.config }}
-  env:
-    PYTHONPATH: /root/.local/lib/python3.6/site-packages
