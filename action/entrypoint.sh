@@ -10,6 +10,7 @@ CMD=(echidna-test "$INPUT_FILES")
 
 for OPTION in OPTIONS; do
     VAR="INPUT_${OPTION^^}"
+    echo "$VAR"
     CMD+=(--$OPTION ${!VAR})
 done
 
